@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Abhiram Nambiar PK – Creative CSE Student & Web Developer" />
+  <title>Abhiram Nambiar PK | Creative Web Developer & CSE Student</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans (Sans-Serif) & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-theme-primary="electricCyan" class="landing-active">
+
+  <!-- Landing Intro Animation Screen -->
+  <div id="landing-intro" class="landing-intro" aria-live="polite">
+    <div class="landing-ambient-glow"></div>
+    <div class="landing-grid-pattern"></div>
+
+    <!-- Tech HUD Corner Annotations -->
+    <div class="landing-corner top-left">
+      <span class="landing-tag-dot"></span>
+      <span class="landing-corner-mono">SYS://AN.PORTFOLIO</span>
+    </div>
+
+    <div class="landing-corner top-right">
+      <button id="landing-skip-btn" class="landing-skip-btn" type="button" title="Skip intro (Esc)">
+        <span>SKIP INTRO</span>
+        <kbd class="skip-kbd">ESC</kbd>
+      </button>
+    </div>
+
+    <div class="landing-corner bottom-left">
+      <span class="landing-corner-mono">SRM IST // CSE</span>
+    </div>
+
+    <div class="landing-corner bottom-right">
+      <span id="landing-status-code" class="landing-corner-mono">STAGE: 01 // INIT</span>
+    </div>
+
+    <!-- Center Display -->
+    <div class="landing-center-content">
+      <div class="landing-status-pill">
+        <span class="landing-pulse-indicator"></span>
+        <span id="landing-subtext">INITIALIZING SYSTEM...</span>
+      </div>
+
+      <div class="landing-text-row">
+        <span class="landing-prompt">&gt;</span>
+        <span id="landing-animated-text" class="landing-animated-text"></span>
+        <span class="landing-cursor" id="landing-cursor">_</span>
+      </div>
+
+      <!-- Modern Cyber Progress Bar -->
+      <div class="landing-progress-container">
+        <div class="landing-progress-bar" id="landing-progress-bar"></div>
+      </div>
+      <div class="landing-percent-row">
+        <span class="landing-percent-label">INITIALIZE_SEQUENCE</span>
+        <span id="landing-percent" class="landing-percent-val">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Animated Canvas Particle Field -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Interactive Smooth Mouse Glow Spotlight -->
+  <div id="mouse-spotlight" class="mouse-spotlight"></div>
+
+  <!-- Atmospheric Multi-Tone Faded & Blended Background Glow with Shadow Contours -->
+  <div class="background-light-container" id="bg-light-container">
+    <div class="background-light orb-cyan"></div>
+    <div class="background-light orb-blue"></div>
+    <div class="background-light orb-purple"></div>
+    <div class="background-shadow orb-shadow-1"></div>
+    <div class="background-shadow orb-shadow-2"></div>
+  </div>
+
+  <!-- Shady Diagonal Shadow Mesh & Architectural Texture -->
+  <div class="background-shadow-mesh"></div>
+
+  <!-- Animated Cyber Radar Scanline Beam -->
+  <div class="background-cyber-scan"></div>
+
+  <!-- Cinematic Vignette Shadow Edge Overlay -->
+  <div class="background-vignette"></div>
+
+  <!-- Outer Frame Primary Canvas -->
+  <div class="frame-primary">
+
+    <!-- Header & Navigation -->
+    <header class="app-header">
+      <a href="#profile" class="logo-monogram">
+        AN<span class="green">.</span><span class="blinking-cursor-sm">_</span>
+      </a>
+
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>available for internships</span>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#profile" class="nav-link active">home</a>
+        <a href="#academics" class="nav-link">academics</a>
+        <a href="#projects" class="nav-link">projects</a>
+        <a href="#certifications" class="nav-link">certs</a>
+        <a href="#internship" class="nav-link">internship</a>
+        <a href="#achievements" class="nav-link">awards</a>
+      </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-canvas" id="profile">
+        <p class="hero-tagline"><span class="code-prompt">$</span> CSE Student &amp; Web Developer</p>
+        <h1 class="hero-title-huge">
+          Abhiram Nambiar <span class="highlight-green">PK</span><span class="blinking-cursor">_</span>
+        </h1>
+        <p class="hero-bio-lead">
+          B.Tech in Computer Science &amp; Engineering at <strong>SRM Institute of Science and Technology</strong>,
+          THIRUCHIRAPALLI.
+          Merging technical engineering fundamentals with creative web developer aesthetics.
+        </p>
+
+        <div class="hero-actions-row">
+          <a href="https://github.com/AbhiramNambiar" target="_blank" class="btn btn-primary-sb">
+            <span class="code-prompt">$</span> view github profile
+          </a>
+          <a href="mailto:abhiram.nambiar44@gmail.com" class="btn">
+            <span class="code-prompt">$</span> contact me
+          </a>
+        </div>
+
+        <!-- Stefano Bartoletti Code-Style Info Panel -->
+        <div class="code-window">
+          <div class="code-window-header">
+            <span class="win-dot red"></span>
+            <span class="win-dot yellow"></span>
+            <span class="win-dot green"></span>
+            <span class="win-title">profile.config.json</span>
+          </div>
+          <ul class="info-panel-lines">
+            <li><span class="code-prompt">$</span><strong>location:</strong> Kannur, Kerala, India</li>
+            <li><span class="code-prompt">$</span><strong>email:</strong> abhiram.nambiar44@gmail.com</li>
+            <li><span class="code-prompt">$</span><strong>github:</strong> github.com/AbhiramNambiar</li>
+            <li><span class="code-prompt">$</span><strong>skills:</strong> Web Development, HTML/CSS, JavaScript,
+              Python, Git &amp; GitHub</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Academics Section -->
+      <section class="section-block" id="academics">
+        <span class="section-tag">02 // ACADEMICS.JSON</span>
+        <h2 class="section-heading">Academic Details</h2>
+
+        <div class="cards-grid-sb">
+          <div class="card-sb">
+            <h3>B.Tech – Electronics &amp; Communication Engineering</h3>
+            <p>GEC Thrissur</p>
+            <p style="margin-top: 1rem; color: var(--brand-green); font-family: var(--font-mono); font-size: 0.8rem;">
+              Status: Undergraduate Program</p>
+          </div>
+
+          <div class="card-sb">
+            <h3>Cumulative GPA</h3>
+            <div class="stat-val-green">8.1 / 10</div>
+            <p>Current Overall Academic Standing</p>
+          </div>
+
+          <div class="card-sb">
+            <h3>Completed Coursework</h3>
+            <ul style="margin-top: 0.75rem; font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.8;">
+              <li>• Engineering Mathematics</li>
+              <li>• Basic Electronics &amp; Circuits</li>
+              <li>• Engineering Physics</li>
+              <li>• Programming in Python</li>
+              <li>• Digital Electronics</li>
+              <li>• Data Structures &amp; Algorithms</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section-block" id="projects">
+        <span class="section-tag">03 // PROJECTS.GIT</span>
+        <h2 class="section-heading">Featured Projects</h2>
+
+        <div class="projects-list">
+
+          <div class="project-item-sb">
+            <span class="project-index">01.</span>
+            <div class="project-info-main">
+              <h3>Python Basics</h3>
+              <p>Comprehensive repository covering Python fundamentals — syntax, OOP, and data structures.</p>
+              <div class="project-tags-row">
+                <span class="tag-pill-sb">Python</span>
+                <span class="tag-pill-sb">OOP</span>
+                <span class="tag-pill-sb">GitHub</span>
+              </div>
+            </div>
+            <a href="https://github.com/AbhiramNambiar/Python-Basics" target="_blank" class="project-link-icon"
+              aria-label="GitHub link">
+              ↗
+            </a>
+          </div>
+
+          <div class="project-item-sb">
+            <span class="project-index">02.</span>
+            <div class="project-info-main">
+              <h3>Portfolio Website</h3>
+              <p>Personal portfolio website featuring dark-mode creative aesthetic and smooth interactions.</p>
+              <div class="project-tags-row">
+                <span class="tag-pill-sb">HTML</span>
+                <span class="tag-pill-sb">CSS</span>
+                <span class="tag-pill-sb">JavaScript</span>
+              </div>
+            </div>
+            <a href="https://github.com/AbhiramNambiar" target="_blank" class="project-link-icon"
+              aria-label="GitHub link">
+              ↗
+            </a>
+          </div>
+
+          <div class="project-item-sb">
+            <span class="project-index">03.</span>
+            <div class="project-info-main">
+              <h3>CSE Projects</h3>
+              <p>Electronics lab experiments, circuit simulations, digital logic design, and sensor prototypes.</p>
+              <div class="project-tags-row">
+                <span class="tag-pill-sb">Circuit Design</span>
+                <span class="tag-pill-sb">Arduino</span>
+                <span class="tag-pill-sb">Proteus</span>
+              </div>
+            </div>
+            <a href="https://github.com/AbhiramNambiar" target="_blank" class="project-link-icon"
+              aria-label="GitHub link">
+              ↗
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section class="section-block" id="certifications">
+        <span class="section-tag">04 // CERTS.ENV</span>
+        <h2 class="section-heading">Certifications</h2>
+
+        <div class="cards-grid-sb">
+          <div class="card-sb">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--brand-green);">2024</span>
+            <h3>Python for Everybody</h3>
+            <p>Coursera – University of Michigan</p>
+          </div>
+
+          <div class="card-sb">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--brand-green);">2024</span>
+            <h3>Web Development Bootcamp</h3>
+            <p>Udemy</p>
+          </div>
+
+          <div class="card-sb">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--brand-green);">2024</span>
+            <h3>Git &amp; GitHub Essentials</h3>
+            <p>GitHub Learning Lab</p>
+          </div>
+
+          <div class="card-sb">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--brand-green);">2025</span>
+            <h3>Introduction to Electronics</h3>
+            <p>NPTEL – IIT</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Internship Section -->
+      <section class="section-block" id="internship">
+        <span class="section-tag">05 // INTERNSHIP.SH</span>
+        <h2 class="section-heading">Internship</h2>
+
+        <div class="cards-grid-sb">
+          <div class="card-sb" style="grid-column: span 2;">
+            <div class="status-pill" style="margin-bottom: 1rem;">
+              <span class="status-dot"></span>
+              <span>open for roles</span>
+            </div>
+            <h3>Actively Seeking Internship</h3>
+            <p style="margin-bottom: 1.5rem;">
+              Currently looking for internship opportunities in <strong>Web Development</strong> and <strong>Electronics
+                &amp; Communication</strong>. Open to remote and on-site roles.
+            </p>
+            <a href="mailto:abhiram.nambiar44@gmail.com" class="btn btn-primary-sb">
+              reach out to me
+            </a>
+          </div>
+
+          <div class="card-sb">
+            <h3>What I Bring to the Table</h3>
+            <ul style="font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.8; margin-top: 0.75rem;">
+              <li>• Web Development (HTML/CSS/JS)</li>
+              <li>• Embedded &amp; Electronics (Arduino)</li>
+              <li>• Python Scripting &amp; Automation</li>
+              <li>• Logical &amp; Analytical Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section class="section-block" id="achievements">
+        <span class="section-tag">06 // ACHIEVEMENTS.LOG</span>
+        <h2 class="section-heading">Achievements</h2>
+
+        <div class="cards-grid-sb">
+          <div class="card-sb">
+            <span
+              style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--brand-green);">Participant</span>
+            <h3>College Technical Fest</h3>
+            <p>SRM Institute of Science and Technology</p>
+          </div>
+
+          <div class="card-sb">
+            <span
+              style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--brand-green);">Competitor</span>
+            <h3>Hackathon Participant</h3>
+            <p>College Level</p>
+          </div>
+
+          <div class="card-sb">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--brand-green);">Academic</span>
+            <h3>CGPA Achievement</h3>
+            <p>Maintained CGPA of 8.1/10 at GEC Thrissur</p>
+          </div>
+
+          <div class="card-sb">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--brand-green);">Open
+              Source</span>
+            <h3>Open Source Contribution</h3>
+            <p>Published Python Basics learning repository on GitHub</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-sb">
+      <p>© 2026 <strong>Abhiram Nambiar PK</strong><span class="blinking-cursor-sm">_</span> · GEC Thrissur · Kannur,
+        Kerala</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
